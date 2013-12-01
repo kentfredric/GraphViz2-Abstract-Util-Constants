@@ -25,6 +25,10 @@ requires:
   perl: 5.006
   strict: 0
   warnings: 0
+resources:
+  bugtracker: https://github.com/kentfredric/GraphViz2-Abstract-Util-Constants/issues
+  homepage: https://github.com/kentfredric/GraphViz2-Abstract-Util-Constants
+  repository: https://github.com/kentfredric/GraphViz2-Abstract-Util-Constants.git
 version: 0.001000
 x_BuiltWith:
   modules:

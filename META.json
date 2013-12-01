@@ -103,6 +103,17 @@
       }
    },
    "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/kentfredric/GraphViz2-Abstract-Util-Constants/issues"
+      },
+      "homepage" : "https://github.com/kentfredric/GraphViz2-Abstract-Util-Constants",
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/kentfredric/GraphViz2-Abstract-Util-Constants.git",
+         "web" : "https://github.com/kentfredric/GraphViz2-Abstract-Util-Constants"
+      }
+   },
    "version" : "0.001000",
    "x_BuiltWith" : {
       "modules" : {
