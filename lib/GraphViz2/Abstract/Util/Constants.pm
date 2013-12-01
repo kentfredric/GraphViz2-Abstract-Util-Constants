@@ -19,7 +19,7 @@ use constant UNKNOWN      => \q[unknown];
 
 use parent 'Exporter';
 
-our ( @EXPORT ) = qw( EMPTY_STRING FALSE NONE TRUE UNKNOWN );
+our (@EXPORT) = qw( EMPTY_STRING FALSE NONE TRUE UNKNOWN );
 
 
 1;
