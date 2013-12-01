@@ -6,9 +6,9 @@ VERSION
     version 0.001000
 
 CONSTANTS
-    In the graphviz documentation, there are a few default values which are
-    used multiple times, and the following constants refer to them in one
-    way or another.
+    In the GraphViz documentation <http://www.graphviz.org/content/attrs>,
+    there are a few default values which are used multiple times, and the
+    following constants refer to them in one way or another.
 
     "EMPTY_STRING"
         This simply returns an empty string, and is not likely to change.
@@ -25,7 +25,7 @@ CONSTANTS
         So its assumed that GraphViz, under the hood, interprets the string
         "false" the same as the boolean condition "false";
 
-    * "TRUE"
+    "TRUE"
         Where the specification shows "true" as a default value, this module
         instead returns the string "true"
 
@@ -33,7 +33,7 @@ CONSTANTS
         "true" the same as the boolean condition "true", for similar reasons
         "false" is.
 
-    * "NONE"
+    "NONE"
         In the GraphViz docs, a few items have a default value specified as:
 
             <none>
@@ -70,7 +70,7 @@ CONSTANTS
         undesirable effect of reverting to the default, "black" once
         rendered.
 
-    * "UNKNOWN"
+    "UNKNOWN"
         On the GraphViz documentations, there were quite a few fields where
         the defaults were simply not specified, or their values were
         cryptic.
@@ -89,17 +89,4 @@ COPYRIGHT AND LICENSE
 
     This is free software; you can redistribute it and/or modify it under
     the same terms as the Perl 5 programming language system itself.
-
-POD ERRORS
-    Hey! The above document had some coding errors, which are explained
-    below:
-
-    Around line 62:
-        Expected text after =item, not a bullet
-
-    Around line 69:
-        Expected text after =item, not a bullet
-
-    Around line 101:
-        Expected text after =item, not a bullet
 

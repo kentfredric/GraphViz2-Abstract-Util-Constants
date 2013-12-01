@@ -11,6 +11,7 @@ BEGIN {
 
 # ABSTRACT: Constants used by C<GraphViz2::Abstract::*>
 
+## no critic (ProhibitConstantPragma)
 use constant EMPTY_STRING => q[];
 use constant FALSE        => q[false];
 use constant NONE         => \q[none];
@@ -19,6 +20,7 @@ use constant UNKNOWN      => \q[unknown];
 
 use parent 'Exporter';
 
+## no critic (ProhibitAutomaticExportation)
 our (@EXPORT) = qw( EMPTY_STRING FALSE NONE TRUE UNKNOWN );
 
 
@@ -40,7 +42,7 @@ version 0.001000
 
 =head1 CONSTANTS
 
-In the graphviz documentation, there are a few default values
+In the L<< GraphViz documentation|http://www.graphviz.org/content/attrs >>, there are a few default values
 which are used multiple times, and the following constants refer to them in one way or another.
 
 =over 4
@@ -59,14 +61,14 @@ This is because under the hood, GraphViz2 doesn't support values for attributes 
 
 So its assumed that GraphViz, under the hood, interprets the string "false" the same as the boolean condition "false";
 
-=item * C<TRUE>
+=item C<TRUE>
 
 Where the specification shows C<true> as a default value, this module instead returns the string C<true>
 
 Its assumed that GraphViz, under the hood, interprets the string "true" the same as the boolean condition "true",
 for similar reasons L<< C<false>|/FALSE >> is.
 
-=item * C<NONE>
+=item C<NONE>
 
 In the GraphViz docs, a few items have a default value specified as:
 
@@ -98,7 +100,7 @@ Also:
 
 Will not emit a value for C<color> in its output, which may have the undesirable effect of reverting to the default, C<black> once rendered.
 
-=item * C<UNKNOWN>
+=item C<UNKNOWN>
 
 On the GraphViz documentations, there were quite a few fields where the defaults were simply not specified,
 or their values were cryptic.
